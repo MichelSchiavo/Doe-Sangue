@@ -26,26 +26,6 @@ nunjucks.configure("./", {
     noCache: true//Faz o navegador não viver de cache para mostrar as coisas
 })
 
-//Lista de doadores: Vetor ou array
-/*const donors = [
-    {
-        name: "Xablau1",
-        blood: "AB+"
-    },
-    {
-        name: "Xablau2",
-        blood: "AB-"
-    },
-    {
-        name: "Xablau3",
-        blood: "O-"
-    },
-    {
-        name: "Xablau4",
-        blood: "CU"
-    },
-]*/
-
 //Configurar a apresentação da página
 server.get("/", function (req, res) {
     //return res.send('ok, cheguei aqui com nodemon')
