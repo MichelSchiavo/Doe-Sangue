@@ -37,7 +37,6 @@ server.get("/", function (req, res) {
 
     return res.render("index.html", { donors })
     })
-
     
 })
 
@@ -46,12 +45,6 @@ server.post("/", function(req, res) {
     const name = req.body.name
     const email = req.body.email
     const blood = req.body.blood
-
-    //Coloca valores dentro do array
-    /*donors.push({
-        name: name,
-        blood:blood
-    })*/
 
     if (name == "" || email == "" || blood == "") {
         return res.send("Todos os campos são obrigatórios")
